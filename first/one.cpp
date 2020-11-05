@@ -105,3 +105,32 @@ typedef struct DulNode{
 struct DulNode *next;//后驱指针
 }DulNode,*DuLinkList;
 
+
+顺序栈
+typedef struct{
+  SElemType data[MAXSIZE];
+  int top; //用于栈顶指针
+}SqStack;
+
+Status Push(SqStack *S, SElemType e){
+  if(S->top == MAXSIZE-1)
+    return ERROR;
+  S->top++;//栈顶指针加1
+  S->data[S->top] = e;//将新插入元素赋值给栈顶空间
+  return OK;
+}
+Status Pop(SqStack *S, SElemType *e){
+  if(S->top==-1)
+    return ERROR;
+  *e = S->data[S->top];
+  S->top--;
+  return OK;
+}
+
+
+
+
+
+
+
+
