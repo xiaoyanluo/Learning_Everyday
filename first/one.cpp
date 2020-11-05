@@ -27,12 +27,13 @@ Status ListDelete(Sqlist *L, int i,ElemType *e)
   *e = L-data[i-1];
   if(i<L->length)//如果删除位置不是最后一个元素
   {
-    for(k=i;k<L->length;i++)
+    for(k=i;k<L->length;k++)
     {
-      L->data[i-1] = L->data[i];
+      L->data[k-1] = L->data[k];
     }
   }
   L->length--;
   return OK;
 }
+//以上线性表的顺序结构在 存数据、读数据时的复杂度为O(1). 而插入或删除时为O(n)。
 
