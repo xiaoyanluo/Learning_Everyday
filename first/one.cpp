@@ -97,3 +97,11 @@ void CreatListHead(LinkList *L, int n){
    }
 }
 
+
+//双向链表
+typedef struct DulNode{
+  ElemType data;
+  struct DulNode *prior;//前驱指针
+struct DulNode *next;//后驱指针
+}DulNode,*DuLinkList;
+
