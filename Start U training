@@ -4,3 +4,5 @@ img=Image.open("d.png") img.verify() creat_detesubset() image-augment-funs . mod
 mAp,Precision,Recall,F1-measure,iou
 Flops = Kh × Kw × Cin × Cout × H × W = 即（当前层卷积核filters × 输出的feature maps）,此外,
 Focus的作用无非是使图片在下采样的过程中，可以一定程度上减少了模型的计算量，并且不会带来信息丢失，为后续的特征提取保留了更完整(更完整更完整更完整)的图片下采样信息.
+https://blog.csdn.net/weixin_38145317/article/details/106281462   BFLOPS-十亿次浮点运算
+P, R, mAP,F1,val GIoU, val Objectness, val Classification.
